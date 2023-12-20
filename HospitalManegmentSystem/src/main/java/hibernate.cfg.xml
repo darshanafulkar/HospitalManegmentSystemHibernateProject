@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">Darshu@2001</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hospitalmanegement</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        
+         <!-- Ye humne dala hai -->
+        <property name="hbm2ddl.auto">create</property>
+          <mapping class = "com.anudip.HospitalManegmentSystem.Entity.Doctor"/>
+        <mapping class = "com.anudip.HospitalManegmentSystem.Entity.Appointement"/>
+        <mapping class = "com.anudip.HospitalManegmentSystem.Entity.Patient"/>
+        <!-- Ye humne dala hai -->
+    </session-factory>
+</hibernate-configuration>
